@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Online Boarding <= 0.25\nsamples = 2872\nvalue = [1630, 1242]\nclass = not satisfied", fillcolor="#f9e1d0"] ;
+1 [label="In-flight Wifi Service <= -1.25\nsamples = 1469\nvalue = [1221, 248]\nclass = not satisfied", fillcolor="#ea9b61"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 70\nvalue = [0, 70]\nclass = satisfied", fillcolor="#399de5"] ;
+1 -> 2 ;
+3 [label="In-flight Wifi Service <= 0.25\nsamples = 1399\nvalue = [1221, 178]\nclass = not satisfied", fillcolor="#e99356"] ;
+1 -> 3 ;
+4 [label="samples = 1253\nvalue = [1175, 78]\nclass = not satisfied", fillcolor="#e78946"] ;
+3 -> 4 ;
+5 [label="samples = 146\nvalue = [46, 100]\nclass = satisfied", fillcolor="#94caf1"] ;
+3 -> 5 ;
+6 [label="Type of Travel_Personal <= 0.5\nsamples = 1403\nvalue = [409, 994]\nclass = satisfied", fillcolor="#8ac5f0"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="In-flight Entertainment <= -0.167\nsamples = 1120\nvalue = [188, 932]\nclass = satisfied", fillcolor="#61b1ea"] ;
+6 -> 7 ;
+8 [label="samples = 291\nvalue = [127, 164]\nclass = satisfied", fillcolor="#d2e9f9"] ;
+7 -> 8 ;
+9 [label="samples = 829\nvalue = [61, 768]\nclass = satisfied", fillcolor="#49a5e7"] ;
+7 -> 9 ;
+10 [label="In-flight Wifi Service <= 0.75\nsamples = 283\nvalue = [221, 62]\nclass = not satisfied", fillcolor="#eca471"] ;
+6 -> 10 ;
+11 [label="samples = 252\nvalue = [221, 31]\nclass = not satisfied", fillcolor="#e99355"] ;
+10 -> 11 ;
+12 [label="samples = 31\nvalue = [0, 31]\nclass = satisfied", fillcolor="#399de5"] ;
+10 -> 12 ;
+}
